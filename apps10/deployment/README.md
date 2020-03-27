@@ -62,7 +62,7 @@ Right now there is no deployment/ ARM done for this. Since we just need to show 
 
 Let's create a VM scaleset with Azure CLI
 
-    az group create --name apps10demo-vmscale --location eastus
+    az group create --name apps10demo-vmscale --location eastus2
 
     az vmss create --resource-group apps10demo-vmscale --name apps10ScaleSet --image "/subscriptions/<SUBSCRIPTION_ID>/resourceGroups/Tailwind-Shared/providers/Microsoft.Compute/galleries/TailwindShared/images/tailwind-demo1" --upgrade-policy-mode automatic --admin-username frankyadmin --ssh-key-value "C:\Users\frank\.ssh\id_rsa.pub"
 
