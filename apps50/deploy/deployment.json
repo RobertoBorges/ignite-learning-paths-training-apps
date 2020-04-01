@@ -23,7 +23,7 @@
           "type": "microsoft.insights/components",
           "apiVersion": "2015-05-01",
           "name": "[variables('components_tailwindtraders_appinsights_apps50_name')]",
-          "location": "eastus",
+          "location": "eastus2",
           "kind": "web",
           "properties": {
               "Application_Type": "web",
@@ -162,7 +162,7 @@
           "type": "Microsoft.Web/serverfarms",
           "apiVersion": "2016-09-01",
           "name": "[variables('serverfarms_tailwindtraders_website_auseast_apps50_plan_name')]",
-          "location": "Australia East",
+          "location": "eastus2",
           "sku": {
               "name": "P1v2",
               "tier": "PremiumV2",
@@ -183,7 +183,7 @@
           "type": "Microsoft.Web/serverfarms",
           "apiVersion": "2016-09-01",
           "name": "[variables('serverfarms_tailwindtraders_website_eastus_apps50_plan_name')]",
-          "location": "East US",
+          "location": "eastus2",
           "sku": {
               "name": "P1v2",
               "tier": "PremiumV2",
@@ -204,7 +204,7 @@
           "type": "Microsoft.Web/sites",
           "apiVersion": "2016-08-01",
           "name": "[variables('sites_tailwindtraders_website_auseast_apps50_name')]",
-          "location": "Australia East",
+          "location": "eastus2",
           "dependsOn": [
               "[resourceId('Microsoft.Web/serverfarms', variables('serverfarms_tailwindtraders_website_auseast_apps50_plan_name'))]"
           ],
@@ -229,7 +229,7 @@
               "appSettings": [
                 {
                   "name": "DebugInformation__CustomText",
-                  "value": "Australia East"
+                  "value": "East US 2"
                 },
                 {
                   "name": "DebugInformation__ShowDebug",
@@ -313,7 +313,7 @@
           "type": "Microsoft.Web/sites",
           "apiVersion": "2016-08-01",
           "name": "[variables('sites_tailwindtraders_website_eastus_apps50_name')]",
-          "location": "East US",
+          "location": "eastus2",
           "dependsOn": [
               "[resourceId('Microsoft.Web/serverfarms', variables('serverfarms_tailwindtraders_website_eastus_apps50_plan_name'))]"
           ],
@@ -338,7 +338,7 @@
               "appSettings": [
                 {
                   "name": "DebugInformation__CustomText",
-                  "value": "East US"
+                  "value": "eastus2"
                 },
                 {
                   "name": "DebugInformation__ShowDebug",
@@ -422,7 +422,7 @@
           "type": "Microsoft.Web/sites/config",
           "apiVersion": "2016-08-01",
           "name": "[concat(variables('sites_tailwindtraders_website_auseast_apps50_name'), '/web')]",
-          "location": "Australia East",
+          "location": "eastus2",
           "dependsOn": [
               "[resourceId('Microsoft.Web/sites', variables('sites_tailwindtraders_website_auseast_apps50_name'))]"
           ],
@@ -515,7 +515,7 @@
           "type": "Microsoft.Web/sites/config",
           "apiVersion": "2016-08-01",
           "name": "[concat(variables('sites_tailwindtraders_website_eastus_apps50_name'), '/web')]",
-          "location": "East US",
+          "location": "eastus2",
           "dependsOn": [
               "[resourceId('Microsoft.Web/sites', variables('sites_tailwindtraders_website_auseast_apps50_name'))]"
           ],
@@ -608,7 +608,7 @@
           "type": "Microsoft.Web/sites/hostNameBindings",
           "apiVersion": "2016-08-01",
           "name": "[concat(variables('sites_tailwindtraders_website_auseast_apps50_name'), '/', variables('sites_tailwindtraders_website_auseast_apps50_name'), '.azurewebsites.net')]",
-          "location": "Australia East",
+          "location": "eastus2",
           "dependsOn": [
               "[resourceId('Microsoft.Web/sites', variables('sites_tailwindtraders_website_auseast_apps50_name'))]"
           ],
@@ -621,7 +621,7 @@
           "type": "Microsoft.Web/sites/hostNameBindings",
           "apiVersion": "2016-08-01",
           "name": "[concat(variables('sites_tailwindtraders_website_eastus_apps50_name'), '/', variables('sites_tailwindtraders_website_eastus_apps50_name'), '.azurewebsites.net')]",
-          "location": "East US",
+          "location": "eastus2",
           "dependsOn": [
               "[resourceId('Microsoft.Web/sites', variables('sites_tailwindtraders_website_eastus_apps50_name'))]"
           ],
